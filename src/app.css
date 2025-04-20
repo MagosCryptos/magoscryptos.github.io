@@ -49,4 +49,8 @@
 	html {
 		@apply bg-eigengrau text-eigenweiss;
 	}
+
+	a {
+		@apply underline;
+	}
 }

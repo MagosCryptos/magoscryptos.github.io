@@ -1,5 +1,5 @@
 <script>
-	import '../app.css';
+	import '../../app.css';
 
 	let { children } = $props();
 </script>
@@ -12,10 +12,11 @@
 		rel="stylesheet"
 	/>
 
+	<title>Magos Cryptos</title>
+
+	<meta name="theme-color" content="#16161D" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 </svelte:head>
 
-<!-- main content -->
-<main class="font-fira-sans flex h-dvh flex-col justify-stretch">
-	{@render children()}
-</main>
+<!-- naked layout -->
+{@render children()}
