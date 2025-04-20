@@ -1,3 +1,52 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+@theme {
+	--color-eigengrau: rgb(22, 22, 29);
+	--color-eigenweiss: rgb(233, 233, 226);
+
+	--font-fira-sans: 'Fira Sans', 'sans-serif';
+	--font-cinzel: 'Cinzel', 'serif';
+	--font-cinzel-decorative: 'Cinzel Decorative', 'serif';
+
+	--ui-navbar-size: 4rem;
+}
+
+@theme {
+	/* 360..428px / 16px = 22.5..26.75rem width */ /* 32.75 css px/deg; 2.05rem/deg */
+	/* 507px / 20px ... 25..38.4..64rem */
+	/* --breakpoint-tablet: @media all and (min-width: 507px) and (min-height: 507px); */
+
+	/* --breakpoint-tablet: 507px; /* ~20 deg ~820px ~41px/deg; 1rem = 20px; 1deg~41px; */ /* 41 css px/deg; 2.05rem/deg */
+	/* 75rem; width */
+	--breakpoint-tablet: 507px;
+	--breakpoint-laptop: 1200px; /* ~24 deg ~50 rem; 1rem = 24px; */
+	--breakpoint-desktop: 1537px; /* ~30 deg px; 1rem = 28px; 1.67rem/deg */
+	--breakpoint-desktop-4k: 2049px;
+
+	--container-tablet: 640px;
+	--container-laptop: 1200px;
+	--container-desktop: 1537px;
+	--container-desktop-4k: 2049rem;
+
+	--spacing: 0.25rem;
+}
+
+@custom-variant tablet {
+	@media all and (min-width: 507px) and (min-height: 507px) {
+		& {
+			@slot;
+		}
+	}
+}
+
+@layer base {
+	:root {
+		@apply tablet:text-[20px] laptop:text-[24px] desktop:text-[28px] desktop-4k:text-[32px] text-[16px] leading-[1.5] subpixel-antialiased;
+	}
+
+	html {
+		@apply bg-eigengrau text-eigenweiss;
+	}
+}
