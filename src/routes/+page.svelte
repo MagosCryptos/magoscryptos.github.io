@@ -41,7 +41,7 @@
 		</div>
 	</section>
 
-	<section
+	<!-- <section
 		class="tablet:min-h-[24rem] flex min-h-[20rem] w-1/2 flex-col items-center justify-center p-4 portrait:w-full landscape:w-[32rem]"
 	>
 		<h2 class="font-cinzel-decorative w-full text-center text-[2rem] font-bold tracking-widest">
@@ -71,5 +71,5 @@
 			>
 			&mdash; AMM with Personalised Continuous Adjustable Rebalancing<br />
 		</p>
-	</section>
+	</section> -->
 </article>
