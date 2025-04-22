@@ -7,7 +7,7 @@
 		class="flex min-h-dvh w-dvw items-center justify-evenly portrait:flex-col portrait:justify-stretch landscape:flex-row"
 	>
 		<section class="w-1/2 w-[16rem] justify-self-start p-4 portrait:w-full">
-			<div class="animate-appear flex max-w-[16rem] flex-col place-self-center">
+			<div class="animate-appear mx-auto flex max-w-[16rem] flex-col place-self-center">
 				<svg
 					class="mx-auto mt-8 mb-4 h-[10rem] w-[10rem]"
 					version="1.1"
