@@ -7,7 +7,7 @@
 		class="flex min-h-dvh w-dvw items-center justify-evenly portrait:flex-col portrait:justify-stretch landscape:flex-row"
 	>
 		<section class="w-1/2 w-[16rem] justify-self-start p-4 portrait:w-full">
-			<div class="flex max-w-[16rem] flex-col place-self-center">
+			<div class="animate-appear flex max-w-[16rem] flex-col place-self-center">
 				<svg
 					class="mx-auto mt-8 mb-4 h-[10rem] w-[10rem]"
 					version="1.1"
@@ -46,7 +46,7 @@
 		</section>
 
 		<section
-			class="tablet:min-h-[24rem] flex min-h-[20rem] w-1/2 flex-col items-center justify-center p-4 portrait:w-full landscape:w-[32rem]"
+			class="tablet:min-h-[24rem] flex min-h-[20rem] w-1/2 animate-[appear_0.2s] flex-col items-center justify-center p-4 portrait:w-full landscape:w-[32rem]"
 		>
 			<h2
 				class="font-cinzel-decorative w-full text-center text-[1.75rem] font-bold tracking-widest"
